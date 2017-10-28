@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearCarView"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/imageButtonPlayCard"
+                android:layout_width="75dp"
+                android:layout_height="68dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/ic_menu_slideshow" />
+
+
+        <ImageView
+                android:id="@+id/imageViewLCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@android:drawable/screen_background_dark_transparent"
+                android:padding="3dp"
+                app:srcCompat="@android:drawable/dialog_frame" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/textViewTitleCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary" />
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

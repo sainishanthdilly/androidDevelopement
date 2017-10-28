@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Password Generation</string>
+    <string name="forThread">For Thread:</string>
+    <string name="selectpasswordcount">Select Password Count:</string>
+    <string name="passwordlength">Select Password Length</string>
+    <string name="Fotasynctask">For Asynctask:</string>
+    <string name="generate">Generate</string>
+    <string name="pgbyt">Passwords generated using Threads:</string>
+    <string name="pswdGUA">Passwords generated using AsyncTask:</string>
+    <string name="finish">Finish</string>
+</resources>

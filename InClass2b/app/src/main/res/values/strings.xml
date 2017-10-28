@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weight Estimator</string>
+    <string name="XLRange">> 29.9</string>
+    <string name="LRange">25.0 to 29.9</string>
+    <string name="MRange">18.5 to 24.9</string>
+    <string name="LowRange"><![CDATA[< 18.5]]></string>
+    <string name="calculateWeight">Calculate Weight</string>
+    <string name="feet">feet</string>
+    <string name="inches">inches</string>
+</resources>

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "936176943767",
+    "firebase_url": "https://myfirebase-f8a80.firebaseio.com",
+    "project_id": "myfirebase-f8a80",
+    "storage_bucket": "myfirebase-f8a80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936176943767:android:5e55a327916eff11",
+        "android_client_info": {
+          "package_name": "com.example.nishanth.firecastapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936176943767-jc48u5rrog8gssfvdk0hbvqfejudkuoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1Z49k1fbpl3owjRJkM0rcQC8c1I9tCkQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936176943767:android:98784e168190da02",
+        "android_client_info": {
+          "package_name": "com.example.nishanth.inclass06imp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936176943767-jc48u5rrog8gssfvdk0hbvqfejudkuoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1Z49k1fbpl3owjRJkM0rcQC8c1I9tCkQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

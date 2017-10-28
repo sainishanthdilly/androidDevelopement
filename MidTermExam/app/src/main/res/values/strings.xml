@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MidTermExam</string>
+    <string name="refresh_list">Refresh List</string>
+    <string name="favorites">Favorites</string>
+    <string name="sort_inc">Sort Increasingly</string>
+    <string name="sort_desc">Sort decreasingly</string>
+</resources>

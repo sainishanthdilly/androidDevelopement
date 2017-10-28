@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nishanth.inclass06.MainActivity">
+
+    <Button
+        android:text="@string/getNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonGetNews" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonGetNews"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/LinearParent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="20dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ScrollData"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LinearData" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:text="@string/first"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/buttonFirst" />
+
+    <Button
+        android:text="@string/last"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLast"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp" />
+
+    <Button
+        android:text="@string/next"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonNext"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonGetNews" />
+
+    <Button
+        android:text="@string/prev"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPrev"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonFirst"
+        android:layout_toEndOf="@+id/buttonFirst" />
+
+    <Button
+        android:text="Finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFinish"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/buttonGetNews"
+        android:layout_alignStart="@+id/buttonGetNews" />
+</RelativeLayout>

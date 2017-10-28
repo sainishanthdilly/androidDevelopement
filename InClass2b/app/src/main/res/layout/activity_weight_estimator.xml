@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weight_estimator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nishanth.inclass2b.WeightEstimator">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Target Weight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewTW"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="BMI Ranges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTW"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textViewBMI"
+        android:textStyle="normal|bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RadioGroupBMIRange"
+        android:layout_below="@+id/textViewBMI"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="@string/LowRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewBMI"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/radioButtonLow" />
+
+        <RadioButton
+            android:text="@string/MRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButtonL"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioButtonMed" />
+
+        <RadioButton
+            android:text="@string/LRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonL"
+            android:layout_below="@+id/radioButtonXL"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/XLRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonXL"
+            android:layout_below="@+id/radioButtonLow"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:text="Height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroupBMIRange"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textViewHeight"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:id="@+id/editTextHFeet"
+        android:layout_below="@+id/textViewHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextHInches"
+        android:layout_below="@+id/editTextHFeet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:text="@string/feet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextHFeet"
+        android:layout_alignRight="@+id/editTextHFeet"
+        android:layout_marginRight="60dp"
+        android:paddingRight="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/editTextHFeet"
+        android:id="@+id/textViewFeet" />
+
+    <TextView
+        android:text="@string/inches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:paddingRight="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/editTextHInches"
+        android:layout_alignRight="@+id/editTextHInches"
+        android:layout_alignBaseline="@+id/editTextHInches"
+        android:id="@+id/textViewInches" />
+
+    <Button
+        android:text="@string/calculateWeight"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCalculateWeight"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/editTextHInches"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/buttonCalculateWeight"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:id="@+id/textViewResult" />
+
+</RelativeLayout>

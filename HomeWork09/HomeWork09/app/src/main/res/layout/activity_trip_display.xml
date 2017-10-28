@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nishanth.homework09.TripDisplay">
+
+    <EditText
+        android:id="@+id/autocomplete_places"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="9dp"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_style"
+        android:textColorHint="@color/grey"
+        android:hint="@string/autocomplete_hint"
+        android:drawableLeft="@drawable/search"
+
+        android:drawablePadding="9dp"
+        android:textColor="@android:color/primary_text_light" />
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/cross"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="31dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/autocomplete_places"
+        android:layout_alignRight="@+id/autocomplete_places"
+        android:layout_alignEnd="@+id/autocomplete_places" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_pl"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/recyclerView" />
+
+    <Button
+        android:id="@+id/final_places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autocomplete_places"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/autocomplete_places"
+        android:backgroundTint="@color/colorlightgreen"
+        android:text="@string/final_pace" />
+
+    <Button
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:layout_below="@+id/autocomplete_places"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

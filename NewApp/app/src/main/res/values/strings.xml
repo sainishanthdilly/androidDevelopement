@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">New App</string>
+    <string name="SelectNews">Select News Source:</string>
+    <string name="last"><![CDATA[<]]></string>
+    <string name="last1"><![CDATA[|<]]></string>
+    <string name="next"><![CDATA[>]]></string>
+    <string name="first"><![CDATA[>|]]></string>
+    <string-array name="array_NewsSource">
+        <item>bbc-news</item>
+        <item>cnn</item>
+        <item>buzzfeed</item>
+        <item>espn</item>
+        <item>sky-news</item>
+    </string-array>
+
+</resources>

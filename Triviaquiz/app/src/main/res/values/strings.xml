@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Trivia quiz</string>
+    <string name="welcome">Welcome to Trivia App</string>
+    <string name="exit">Exit</string>
+    <string name="Start">Start Trivia</string>
+    <string name="time">Time Left :X Seconds</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OkHttpClientDemo</string>
+    <string name="Login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="choose_password">Choose Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="cancel">cancel</string>
+    <string name="title_activity_subscription">SubscriptionActivity</string>
+</resources>
